@@ -1,0 +1,188 @@
+/*------------------------
+Flat Colors Push Buttons | Denislav Ganchev
+MIT License
+http://github.com/denodenodeno/flat-colors-push-buttons
+------------------------*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oxygen Mono';
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+@media screen and (min-width: 75em) {
+    .container {
+        width: 72em;
+    }
+}
+
+.buttons--group {
+    margin: 2em 0;
+}
+
+.description {
+    color: #999999;
+}
+
+.description .description__bold {
+    color: #303030;
+}
+
+.button {
+    position: relative;
+    min-width: 16em;
+    overflow: hidden;
+    padding: 1em 3em;
+    border: none;
+    font-size: 1em;
+    color: white;
+    box-shadow: 0.3em 0.3em 0 0 rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:hover:before {
+    width: 80%;
+    opacity: 0.3;
+}
+
+.button:hover:after {
+    width: 80%;
+    opacity: 0.3;
+}
+
+.button:active {
+    position: relative;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+    -webkit-transform: translate(0.5em, 0.5em);
+    transform: translate(0.5em, 0.5em);
+    transition: position 0.4s ease;
+}
+
+.button:before {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 0;
+    height: 100%;
+    content: '';
+    background: white;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    transition: all 0.9s ease-in-out;
+}
+
+.button:after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    content: '';
+    background: white;
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    transition: all 0.9s ease-in-out;
+}
+
+.rounded {
+    border-radius: 1.5625em;
+}
+
+.turquoise {
+    background-color: #1ABC9C;
+}
+
+.emerland {
+    background-color: #2ECC71;
+}
+
+.green-sea {
+    background-color: #16A085;
+}
+
+.nephritis {
+    background-color: #27AE60;
+}
+
+.peter-river {
+    background-color: #3498DB;
+}
+
+.belize-hole {
+    background-color: #2980B9;
+}
+
+.amethyst {
+    background-color: #9B59B6;
+}
+
+.wisteria {
+    background-color: #8E44AD;
+}
+
+.wet-asphalt {
+    background-color: #34495E;
+}
+
+.midnight-blue {
+    background-color: #2C3E50;
+}
+
+.sunflower {
+    background-color: #F1C40F;
+}
+
+.orange {
+    background-color: #F39C12;
+}
+
+.carrot {
+    background-color: #E67E22;
+}
+
+.pumpkin {
+    background-color: #D35400;
+}
+
+.alizarin {
+    background-color: #E74C3C;
+}
+
+.pomegranate {
+    background-color: #C0392B;
+}
+
+.clouds {
+    background-color: #ECF0F1;
+}
+
+.silver {
+    background-color: #BDC3C7;
+}
+
+.concrete {
+    background-color: #95A5A6;
+}
+
+.asbestos {
+    background-color: #7F8C8D;
+}
